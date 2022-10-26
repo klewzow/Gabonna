@@ -1,0 +1,142 @@
+ .header {
+     height: 850px;
+
+     &__bg {
+         height: 100%;
+         width: 100%;
+         background-image: url('../img/header/bg/bgc.png');
+         background-size: cover;
+         background-position:center;
+         background-repeat: no-repeat;
+     }
+
+     &__container {
+         display: flex;
+         flex-direction: column;
+         min-height: 100%;
+         padding-bottom: 25px;
+         text-align: center;
+     }
+
+     &__navigatopn {
+         min-height: 80px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+
+
+     }
+
+     &__navigatopn-img {
+         position: relative;
+         width: 252px;
+         top: -25px;
+         left: 0;
+
+         &>img {
+            
+             position: absolute;
+             left: -80px;
+         }
+     }
+
+     &__link-item {
+         display: inline-block;
+         margin-left: 15px;
+         color: #E5e5e5;
+         transition: all 0.3s;
+
+         &:hover {
+             color: gold;
+             transform: scale(1.2);
+         }
+     }
+ 
+     &__content {
+        
+         display: flex;
+         flex: 1 1 auto;
+         flex-direction: column;
+         justify-content: flex-end;
+         align-items: center;
+         padding: 50px 0;
+
+         &>h1 {
+             font-weight: 700;
+             font-size: 36px;
+             line-height: 49px;
+             color: #FFFFFF;
+             padding-bottom: 30px;
+         }
+
+         &>a {
+             transition: all 0.3s;
+             cursor: pointer;
+             padding: 5px 15px;
+             color: #FFFFFF;
+             background-color: none;
+             border: 1px solid #fff;
+
+             &:hover {
+                 color: gold;
+                 border: 1px solid gold;
+                 box-shadow: 5px 2px 4px;
+             }
+         }
+
+     }
+
+     &__end {
+         display: flex;
+         justify-content: center;
+
+         &>div::after {
+             content: '';
+             display: inline-block;
+             height: 100%;
+             top: 0px;
+
+
+             width: 3px;
+             background-color: #fff;
+
+         }
+         &>div:last-child::after{
+            height: 0%;
+        }
+       
+     }
+
+     &__end-rectangle {
+         transition: all 0.3s;
+         margin: 20px 20px;
+
+         &:hover {
+             transform: scale(1.2);
+         }
+
+     }
+  
+ }
+
+ ._fhd {
+    display: flex;
+ }
+
+ ._shd {
+    display: none;
+ }
+
+._mhd {
+ display: none;
+
+ }
+
+ ._mshd {
+    display: none;
+
+ }
+
+ 
+  
